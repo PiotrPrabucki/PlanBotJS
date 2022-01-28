@@ -1,0 +1,276 @@
+{
+    "Plan": {
+        "Day": [
+            {
+                "Lesson": [
+                    {
+                        "Name": "null",
+                        "Hour": 7,
+                        "Min": 10
+                    },
+                    {
+                        "Name": "mat",
+                        "Hour": 8,
+                        "Min": 0
+                    },
+                    {
+                        "Name": "mat",
+                        "Hour": 8,
+                        "Min": 55
+                    },
+                    {
+                        "Name": "ang",
+                        "Hour": 9,
+                        "Min": 50
+                    },
+                    {
+                        "Name": "pol",
+                        "Hour": 10,
+                        "Min": 45
+                    },
+                    {
+                        "Name": "PP",
+                        "Hour": 11,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "biol",
+                        "Hour": 12,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "zzw",
+                        "Hour": 13,
+                        "Min": 35
+                    },
+                    {
+                        "Name": "niem",
+                        "Hour": 14,
+                        "Min": 30
+                    },
+                    {
+                        "Name": "inf",
+                        "Hour": 15,
+                        "Min": 25
+                    }
+                ]
+            },
+            {
+                "Lesson": [
+                    {
+                        "Name": "null",
+                        "Hour": 7,
+                        "Min": 10
+                    },
+                    {
+                        "Name": "Pol",
+                        "Hour": 8,
+                        "Min": 0
+                    },
+                    {
+                        "Name": "Fiz",
+                        "Hour": 8,
+                        "Min": 55
+                    },
+                    {
+                        "Name": "Mat",
+                        "Hour": 9,
+                        "Min": 50
+                    },
+                    {
+                        "Name": "His",
+                        "Hour": 10,
+                        "Min": 45
+                    },
+                    {
+                        "Name": "Rel",
+                        "Hour": 11,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "Niem",
+                        "Hour": 12,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "His",
+                        "Hour": 13,
+                        "Min": 35
+                    },
+                    {
+                        "Name": "wf",
+                        "Hour": 14,
+                        "Min": 30
+                    },
+                    {
+                        "Name": "wf",
+                        "Hour": 15,
+                        "Min": 25
+                    }
+                ]
+            },
+            {
+                "Lesson": [
+                    {
+                        "Name": "Ckz",
+                        "Hour": 7,
+                        "Min": 10
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 8,
+                        "Min": 0
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 8,
+                        "Min": 55
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 9,
+                        "Min": 50
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 10,
+                        "Min": 45
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 11,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 12,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 13,
+                        "Min": 35
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 14,
+                        "Min": 30
+                    },
+                    {
+                        "Name": "Ckz",
+                        "Hour": 15,
+                        "Min": 25
+                    }
+                ]
+            },
+            {
+                "Lesson": [
+                    {
+                        "Name": "ckz",
+                        "Hour": 7,
+                        "Min": 10
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 8,
+                        "Min": 0
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 8,
+                        "Min": 55
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 9,
+                        "Min": 50
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 10,
+                        "Min": 45
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 11,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 12,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 13,
+                        "Min": 35
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 14,
+                        "Min": 30
+                    },
+                    {
+                        "Name": "ckz",
+                        "Hour": 15,
+                        "Min": 25
+                    }
+                ]
+            },
+            {
+                "Lesson": [
+                    {
+                        "Name": "null",
+                        "Hour": 7,
+                        "Min": 10
+                    },
+                    {
+                        "Name": "Geo",
+                        "Hour": 8,
+                        "Min": 0
+                    },
+                    {
+                        "Name": "Ang",
+                        "Hour": 8,
+                        "Min": 55
+                    },
+                    {
+                        "Name": "WF",
+                        "Hour": 9,
+                        "Min": 50
+                    },
+                    {
+                        "Name": "Chem",
+                        "Hour": 10,
+                        "Min": 45
+                    },
+                    {
+                        "Name": "Rel",
+                        "Hour": 11,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "Pol",
+                        "Hour": 12,
+                        "Min": 40
+                    },
+                    {
+                        "Name": "Mat",
+                        "Hour": 13,
+                        "Min": 35
+                    },
+                    {
+                        "Name": "Mat",
+                        "Hour": 14,
+                        "Min": 30
+                    },
+                    {
+                        "Name": "null",
+                        "Hour": 15,
+                        "Min": 25
+                    }
+                ]
+            }
+        ]
+    }
+}
