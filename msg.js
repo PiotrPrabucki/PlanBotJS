@@ -26,16 +26,6 @@ const eHelp = new MessageEmbed().setColor(config.color).setTitle('help').addFiel
         inline: false,
     },
     {
-        name: config.prefix + "add",
-        value: " - nadaje role pbping która jest 5 min przed lekcją pingowana ",
-        inline: false,
-    },
-    {
-        name: config.prefix + "remove",
-        value: " - zabiera role pbping która jest 5 min przed lekcją pingowana ",
-        inline: false,
-    },
-    {
         name: config.prefix + "plan",
         value: " - wypisuje plan lekcji na obecny dzień",
         inline: false,
