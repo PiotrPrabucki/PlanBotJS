@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const fs = require("fs");
+const { MessageEmbed } = require('discord.js');
 
 const Config = fs.readFileSync("config.json", "utf8");
 const config = JSON.parse(Config);
@@ -7,7 +8,7 @@ const config = JSON.parse(Config);
 const data = fs.readFileSync(config.planFile, "utf8");
 const Data = JSON.parse(data);
 
-const eHelp = new Discord.MessageEmbed().setColor(config.color).addFields(
+const eHelp = new MessageEmbed().setColor(config.color).setTitle('help').addFields(
     {
         name: config.prefix + "help",
         value: " - wyświetla liste komend",
