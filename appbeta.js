@@ -9,6 +9,11 @@ const data = fs.readFileSync(config.planFile, "utf8")
 const Data = JSON.parse(data)
 const { MessageEmbed } = require('discord.js');
 let interval
+let lessTitle = "inProgress"
+let a = true
+
+
+console.log(Data.Plan.Day[0].Lesson[1].Hour)
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
 let defChannel
@@ -44,7 +49,7 @@ client.on('messageCreate', async (msg) =>{
     msg.reply(Msg.Info);
 
   }else if(cmd === 'setup'){
-
+    
     setup(msg, false)
 
   }else if(cmd === 'devsetup'){
@@ -95,7 +100,7 @@ async function setup(msg, dev){
   msg.channel.send('ustawiono kanał __***' + msg.channel.name + '***__ jako domyślny kanał tekstowy')
   if (!msg.guild.channels.cache.some((channel) => channel.id == config.vchId)) {
     voiceChannelData = await msg.guild.channels.create("inProgress", {
-      type: "voice",
+      type: 'GUILD_VOICE',
     });
     config.vchId = voiceChannelData.id;
     console.log(voiceChannelData.id)
@@ -122,25 +127,87 @@ async function setup(msg, dev){
   }
 }
 
+
+let actlesson;
+let min = 0
+  let hour = 7
+  let dAy = 1
+  
+function Interwwal(){
+ /*
+  let min = new Date().getMinutes()
+  let hour = new Date().getHours()
+  let dAy = new Date().getDay() - 1
+*/
+min++
+if(min === 60){
+  min = 0
+  hour++
+}
+if(hour === 17){
+  clearInterval(interval)
+}
+  //console.log(dAy);
+ // console.log(Data.Plan.Day[dAy].Lesson[0].Name)
+  //console.log(min+''+hour)
+  if(hour < 8){
+    lessTitle = Data.Plan.Day[dAy].Lesson[0].Name + " "+ Data.Plan.Day[dAy].Lesson[0].Hour + ':' + Data.Plan.Day[dAy].Lesson[0].Min + '0'
+    actlesson = 0
+    console.log(hour+ ':'+min+' '+lessTitle)
+  }else{
+     for(let i = 0;i < 9; i++){
+    
+        if(Data.Plan.Day[dAy].Lesson[i].Hour == hour && Data.Plan.Day[dAy].Lesson[i].Min == min && Data.Plan.Day[dAy].Lesson[i].Name != null){
+            lessTitle = Data.Plan.Day[dAy].Lesson[i].Name + " trwa!"
+            actlesson = i
+            console.log(hour+ ':'+min+' '+lessTitle)
+            i=10
+        }else if(Data.Plan.Day[dAy].Lesson[i].Name === null){
+          lessTitle = 'Koniec lekcji'
+          console.log(hour+ ':'+min+' '+lessTitle)
+        }
+        
+    }
+    if(actlesson<8){
+      if(Data.Plan.Day[dAy].Lesson[actlesson].Hour == hour && Data.Plan.Day[dAy].Lesson[actlesson].Min + 4 == min){
+         lessTitle = Data.Plan.Day[dAy].Lesson[actlesson + 1].Name + " "+ Data.Plan.Day[dAy].Lesson[actlesson + 1].Hour + ':' + Data.Plan.Day[dAy].Lesson[actlesson + 1].Min
+         console.log(hour+ ':'+min+' '+lessTitle)
+      }
+
+    }if(dAy === 4 && actlesson === 7){
+      if(Data.Plan.Day[dAy].Lesson[actlesson].Hour == hour && Data.Plan.Day[dAy].Lesson[actlesson].Min + 4 == min){
+         lessTitle = 'Koniec lekcji'
+         console.log(hour+ ':'+min+' '+lessTitle)
+      }
+
+    }else if(actlesson === 8){
+      if(Data.Plan.Day[dAy].Lesson[actlesson].Hour == hour && Data.Plan.Day[dAy].Lesson[actlesson].Min + 4 == min){
+        lessTitle = 'Koniec lekcji'
+        console.log(hour+ ':'+min+' '+lessTitle)
+     }
+    }
+    
+  if (client.channels.cache.get(config.vchId).name != lessTitle) {
+    
+   client.channels.cache.get(config.vchId).setName(lessTitle)
+  }
+  return 0
+}
+//console.log(hour+ ':'+min+' '+lessTitle)
+}
 function startInterval(msg) {
-  for (let isTrue = false; isTrue == false;) {
+  
+  console.log('AHA');
+  while(a) {
     const sec = new Date().getSeconds()
+    
     if (sec == 0) {
-      isTrue = true
-      interval = startInterval(Interwwal(msg), 1000)
+      
+      interval = setInterval(Interwwal, 10)
+      a = false 
+      console.log(a);
     }
   }
-}
-
-function Interwwal(msg){
-  const min = new Date().getMinutes()
-  const hour = new Date().getHours()
-  const day = new Date().getDay()
-  let lessTitle = "inProgress"
-  console.log(min+''+hour)
-  if (client.channels.cache.get(config.vchId).name != lessTitle) {
-    client.channels.cache.get(config.vchId).setName(lessTitle)
-}
 }
 
 client.login(config.token);

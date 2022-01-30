@@ -4,11 +4,6 @@
             {
                 "Lesson": [
                     {
-                        "Name": "null",
-                        "Hour": 7,
-                        "Min": 10
-                    },
-                    {
                         "Name": "mat",
                         "Hour": 8,
                         "Min": 0
@@ -57,11 +52,6 @@
             },
             {
                 "Lesson": [
-                    {
-                        "Name": "null",
-                        "Hour": 7,
-                        "Min": 10
-                    },
                     {
                         "Name": "Pol",
                         "Hour": 8,
@@ -113,11 +103,6 @@
                 "Lesson": [
                     {
                         "Name": "Ckz",
-                        "Hour": 7,
-                        "Min": 10
-                    },
-                    {
-                        "Name": "Ckz",
                         "Hour": 8,
                         "Min": 0
                     },
@@ -167,11 +152,6 @@
                 "Lesson": [
                     {
                         "Name": "ckz",
-                        "Hour": 7,
-                        "Min": 10
-                    },
-                    {
-                        "Name": "ckz",
                         "Hour": 8,
                         "Min": 0
                     },
@@ -219,11 +199,6 @@
             },
             {
                 "Lesson": [
-                    {
-                        "Name": "null",
-                        "Hour": 7,
-                        "Min": 10
-                    },
                     {
                         "Name": "Geo",
                         "Hour": 8,
