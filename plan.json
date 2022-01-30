@@ -19,7 +19,7 @@
                         "Min": 55
                     },
                     {
-                        "Name": "ang",
+                        "Name": "WF/ang",
                         "Hour": 9,
                         "Min": 50
                     },
@@ -49,7 +49,7 @@
                         "Min": 30
                     },
                     {
-                        "Name": "inf",
+                        "Name": "niem/inf",
                         "Hour": 15,
                         "Min": 25
                     }
@@ -235,7 +235,7 @@
                         "Min": 55
                     },
                     {
-                        "Name": "WF",
+                        "Name": "Inf/WF",
                         "Hour": 9,
                         "Min": 50
                     },

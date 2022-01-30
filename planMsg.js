@@ -95,7 +95,7 @@ function fPlan() {
         );
     return fullPlan
 }
-/*
+
 function dPlan(dayIn) {
     dayPlan = new MessageEmbed()
         .setColor(config.color)
@@ -124,8 +124,8 @@ function dPlan(dayIn) {
         );
     return dayPlan
 }
-*/
+
 module.exports = { 
-    //dPlan, 
+    dPlan, 
     fPlan 
 }
