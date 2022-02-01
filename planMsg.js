@@ -14,7 +14,7 @@ function fPlan() {
         .addFields(
             {
                 name: "Nr.lekcji",
-                value: "0.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.",
+                value: "0.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.",
                 inline: true,
             },
             {
@@ -28,8 +28,7 @@ function fPlan() {
                     Data.Plan.Day[0].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[0].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[0].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[0].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[0].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[0].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             },
             {
@@ -43,8 +42,7 @@ function fPlan() {
                     Data.Plan.Day[1].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[1].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[1].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[1].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[1].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[1].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             },
             {
@@ -58,8 +56,7 @@ function fPlan() {
                     Data.Plan.Day[2].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[2].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[2].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[2].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[2].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[2].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             },
             {
@@ -73,8 +70,7 @@ function fPlan() {
                     Data.Plan.Day[3].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[3].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[3].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[3].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[3].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[3].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             },
             {
@@ -88,8 +84,7 @@ function fPlan() {
                     Data.Plan.Day[4].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[4].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[4].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[4].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[4].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[4].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             }
         );
@@ -103,7 +98,7 @@ function dPlan(dayIn) {
         .addFields(
             {
                 name: "Nr.lekcji",
-                value: "0.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.",
+                value: "0.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.",
                 inline: true,
             },
             {
@@ -117,8 +112,7 @@ function dPlan(dayIn) {
                     Data.Plan.Day[dayIn].Lesson[5].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[dayIn].Lesson[6].Name.replace("null", "Wolna lekcja") + "\n" +
                     Data.Plan.Day[dayIn].Lesson[7].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[dayIn].Lesson[8].Name.replace("null", "Wolna lekcja") + "\n" +
-                    Data.Plan.Day[dayIn].Lesson[9].Name.replace("null", "Wolna lekcja"),
+                    Data.Plan.Day[dayIn].Lesson[8].Name.replace("null", "Wolna lekcja"),
                 inline: true,
             }
         );
